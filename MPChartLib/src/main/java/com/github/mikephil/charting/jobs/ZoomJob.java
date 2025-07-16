@@ -2,6 +2,7 @@
 package com.github.mikephil.charting.jobs;
 
 import android.graphics.Matrix;
+import android.util.Log;
 import android.view.View;
 
 import com.github.mikephil.charting.charts.BarLineChartBase;
@@ -52,6 +53,7 @@ public class ZoomJob extends ViewPortJob {
         this.scaleX = scaleX;
         this.scaleY = scaleY;
         this.axisDependency = axis;
+        Log.i("cmytempest", "ZoomJob ZoomJob:");
     }
 
     protected Matrix mRunMatrixBuffer = new Matrix();
