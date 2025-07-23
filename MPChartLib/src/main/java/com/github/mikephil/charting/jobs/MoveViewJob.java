@@ -40,8 +40,8 @@ public class MoveViewJob extends ViewPortJob {
     @Override
     public void run() {
 
-        pts[0] = xValue + 1;
-        pts[1] = yValue + 1;
+        pts[0] = xValue + 4;
+        pts[1] = yValue + 4;
 
         mTrans.pointValuesToPixel(pts);
         mViewPortHandler.centerViewPort(pts, view);
