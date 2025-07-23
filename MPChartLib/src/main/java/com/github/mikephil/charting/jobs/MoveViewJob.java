@@ -15,7 +15,7 @@ public class MoveViewJob extends ViewPortJob {
     private static ObjectPool<MoveViewJob> pool;
 
     static {
-        pool = ObjectPool.create(2, new MoveViewJob(null,0,0,null,null));
+        pool = ObjectPool.create(3, new MoveViewJob(null,0,0,null,null));
         pool.setReplenishPercentage(0.5f);
     }
 
